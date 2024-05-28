@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { PageOne } from './pages/PageOne';
+import { PageTwo } from './pages/PageTwo';
+import { PageThree } from './pages/PageThrree';
+import { Error404 } from './pages/Error404';
+import styles from './pages/my-style.module.css';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+      <div className={styles.header}>  <h1>HEADER</h1>  </div>
+      <div>
+        NAVIGATION - here we have navigation
+      </div>
+      <div className={styles.content}>
+        <Routes>
+          <Route path="/page1" element={<PageOne />} />
+          <Route path="/page2" element={<PageTwo />} />
+          <Route path="/page3" element={<PageThree />} />
+          <Route path="/page4" element={<Error404 />} />
+        </Routes>
+      </div>
+      <div className={styles.footer}>adidas 2024</div>
+    </div >
   );
 }
 
+
 export default App;
+
+

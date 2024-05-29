@@ -6,6 +6,7 @@ import { PageThree } from './pages/PageThrree';
 import { Error404 } from './pages/Error404';
 import styles from './pages/my-style.module.css';
 import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function App() {
   return (
@@ -13,7 +14,10 @@ function App() {
       <div className={styles.header}>  <h1>HEADER</h1>  </div>
       <div className={styles.body}>
         <div className={styles.nav} >
-          NAVIGATION - here we have navigation
+          <div> <NavLink to={"/page1"}>Page1</NavLink> </div>
+          <div><NavLink to={"/page2"}>Page2</NavLink></div>
+          <div><NavLink to={"/page3"}>Page3</NavLink></div>
+
         </div>
         <div className={styles.content}>
           <Routes>

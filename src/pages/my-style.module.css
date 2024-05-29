@@ -10,13 +10,14 @@
   display: flex;
 }
 
-.nav { 
+.nav {   
   background-color: white;
   min-height: 400px;
   width: 30%;
   color: #282c34; 
-  font-size: 30px; 
+  font-size: 20px; 
 }
+
 
 
 .content {
@@ -28,10 +29,12 @@
 }
 
 .footer {
-   background-color: aqua;  
+   background-color: black;  
    text-align: center; 
    font-size: 24px; 
-   font-weight: 700;
+   font-weight: 700; 
+   height: 120px; 
+   color: white;
 }  
 
 

@@ -16,8 +16,18 @@
   width: 30%;
   color: #282c34; 
   font-size: 20px; 
-}
+} 
 
+.isActive {
+  text-decoration: none; 
+  /** color: #282c34; **/ 
+  color: yellow;
+}  
+
+.navLink {
+  color: #7fb8f1;  
+  text-decoration: underline;
+}
 
 
 .content {

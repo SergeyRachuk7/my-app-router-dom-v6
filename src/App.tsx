@@ -9,9 +9,9 @@ import { NavLink } from 'react-router-dom';
 import { S } from './pages/_styles';
 
 const PATH = {
-  PAGE1: "/page1",
-  PAGE2: "/page2",
-  PAGE3: "/page3",
+  PAGE1: "/Adidas",
+  PAGE2: "/Puma",
+  PAGE3: "/Asics",
   PAGE4: "/error404"
 } as const
 
@@ -22,9 +22,9 @@ function App() {
       <div className={styles.header}>  <h1>HEADER</h1>  </div>
       <div className={styles.body}>
         <div className={styles.nav}>
-          <S.NavWrapper><NavLink to={PATH.PAGE1} >Page1</NavLink> </S.NavWrapper>
-          <S.NavWrapper><NavLink to={PATH.PAGE2} >Page2</NavLink></S.NavWrapper>
-          <S.NavWrapper><NavLink to={PATH.PAGE3} >Page3</NavLink></S.NavWrapper>
+          <S.NavWrapper><NavLink to={PATH.PAGE1} >Adidas</NavLink> </S.NavWrapper>
+          <S.NavWrapper><NavLink to={PATH.PAGE2} >Puma</NavLink></S.NavWrapper>
+          <S.NavWrapper><NavLink to={PATH.PAGE3} >Asics</NavLink></S.NavWrapper>
         </div>
         <div className={styles.content}>
           <Routes>

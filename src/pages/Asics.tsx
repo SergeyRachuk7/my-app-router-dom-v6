@@ -1,6 +1,6 @@
 import React from "react"
 
-export const PageThree = () => {
+export const Asics = () => {
   return (
     <div>
       <h2>ASICS</h2>
@@ -11,3 +11,4 @@ export const PageThree = () => {
 
   )
 }
+

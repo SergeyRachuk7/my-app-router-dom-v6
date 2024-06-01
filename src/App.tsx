@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from './pages/my-style.module.css';
-import { PageOne } from './pages/PageOne';
-import { PageTwo } from './pages/PageTwo';
-import { PageThree } from './pages/PageThrree';
+import { Adidas } from './pages/Adidas';
+import { Puma } from './pages/Puma';
+import { Asics } from './pages/Asics';
 import { Error404 } from './pages/Error404';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
@@ -30,10 +30,9 @@ function App() {
           <Routes>
             <Route path={"/"} element={<Navigate to={"/page1"} />} />
 
-            <Route path={PATH.PAGE1} element={<PageOne />} />
-            <Route path={PATH.PAGE2} element={<PageTwo />} />
-            <Route path={PATH.PAGE3} element={<PageThree />} />
-
+            <Route path={PATH.PAGE1} element={<Adidas />} />
+            <Route path={PATH.PAGE2} element={<Puma />} />
+            <Route path={PATH.PAGE3} element={<Asics />} />
             <Route path={PATH.PAGE4} element={<Error404 />} />
             <Route path="/*" element={<Navigate to={"/Error404"} />} />
           </Routes>

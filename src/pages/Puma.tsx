@@ -1,7 +1,7 @@
 import React from "react"
 
 
-export const PageTwo = () => {
+export const Puma = () => {
   return (
     <div>
       <h2>PUMA</h2>

@@ -15,7 +15,7 @@
   min-height: 400px;
   width: 30%;
   color: #282c34; 
-  font-size: 20px; 
+  /* font-size: 20px;  */
 } 
 
 .isActive {
@@ -35,7 +35,7 @@
    min-height: 400px;
    width: 70%;
    color: white;
-   font-size: 30px; 
+   
 }
 
 .footer {

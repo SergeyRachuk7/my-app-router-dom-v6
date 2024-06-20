@@ -1,5 +1,7 @@
 import React from "react"
 import AdiFOM_TRXN from '../assets/AdiFOM_TRXN_Shoes_Black_IG7453_01_standard.webp';
+import Puma_White_Puma from "../assets/Puma_White_Puma.webp";
+import Puma_Ferrari from "../assets/Puma_Ferrari.webp";
 import { Link } from "react-router-dom";
 
 import Puma_Trinity from "../assets/Puma_Trinity.webp";
@@ -14,24 +16,24 @@ export type AdidasItem = {
 export const pumaArr: AdidasItem[] = [
   {
     id: 0,
-    model: 'Puma',
+    model: 'Puma_Trinity',
     collection: 'new collection',
     price: '10000$',
     picture: Puma_Trinity,
   },
   {
     id: 1,
-    model: 'Puma',
+    model: ' Puma Ferrari Trinity',
     collection: 'new collection1',
     price: '20000$',
-    picture: Puma_Trinity,
+    picture: Puma_Ferrari,
   },
   {
     id: 2,
-    model: 'Puma',
+    model: 'Puma Trinity',
     collection: 'new collection2',
     price: '30000$',
-    picture: Puma_Trinity,
+    picture: Puma_White_Puma,
   }
 ];
 

@@ -1,15 +1,64 @@
 import React from "react"
+import AdiFOM_TRXN from '../assets/AdiFOM_TRXN_Shoes_Black_IG7453_01_standard.webp';
+import { Link } from "react-router-dom";
+
+import Puma_Trinity from "../assets/Puma_Trinity.webp";
+export type AdidasItem = {
+  model: string;
+  collection: string;
+  price: string;
+  picture: string;
+  id: number
+};
+
+export const pumaArr: AdidasItem[] = [
+  {
+    id: 0,
+    model: 'Puma',
+    collection: 'new collection',
+    price: '10000$',
+    picture: Puma_Trinity,
+  },
+  {
+    id: 1,
+    model: 'Puma',
+    collection: 'new collection1',
+    price: '20000$',
+    picture: Puma_Trinity,
+  },
+  {
+    id: 2,
+    model: 'Puma',
+    collection: 'new collection2',
+    price: '30000$',
+    picture: Puma_Trinity,
+  }
+];
+
 
 
 export const Puma = () => {
   return (
-    <div>
-      <h2>PUMA</h2>
-      <p>
-        Засновник «Puma», Рудольф Дасслер, народився навесні 1898 року в небагатій сім'ї взуттєвого майстра та прачки. У 1920 році його батьки зважилися на авантюру та відкрили власний взуттєвий цех. Крістофер Дасслер (батько сімейства), Адольф (молодший брат) займалися виробленням матеріалів, а мати і сестри робили викрійки — фабрика випускала спальні тапочки та конструктивно прості тенісні туфлі. Рудольф поринув у сімейний бізнес у 1923 році.
+    <div style={{ display: "flex", justifyContent: "center", marginRight: "40px" }}>
+      {pumaArr.map((item, index) => (
+        <div >
+          <Link key={index} to={`/puma/${item.id}`}>
+            <img src={item.picture} alt={item.model} style={{ width: "200px", height: "200px", marginRight: "20px" }} />
+          </Link>
 
-        Варто відзначити, що фабрика Дасслер постійно розвивалася. Тут були винайдені футбольні бутси зі змінними шипами, створювалося екіпірування для олімпійських спортсменів Німеччини. У 1926 році було розгорнуто новий виробничий цех, найнято додатковий персонал. Справи йшли добре, і 1938 року компанія відкрила другу фабрику. Але після смерті батька та Другої світової війни, на полях якої брав участь Рудольф, брати вирішили розділити бізнес. Кожному дісталося по одній фабриці. Поділивши підприємство, брати дали зарок не використати символіку Gebrüder Dassler Sportschuhfabrik. Саме під цією торговою маркою працювала взуттєва мануфактура Дасслер.
-      </p>
-    </div>
+          <h3>{item.model}</h3>
+          {/* <p>{item.collection}</p> */}
+          <p>{item.price}</p>
+        </div>
+
+      ))}
+      <h2  >PUMA</h2>
+      <div>
+        <p style={{ display: "flex", justifyContent: "center" }}>
+          Засновник «Puma», Рудольф Дасслер, народився навесні 1898 року в небагатій сім'ї взуттєвого майстра та прачки. У 1920 році його батьки зважилися на авантюру та відкрили власний взуттєвий цех. Крістофер Дасслер (батько сімейства), Адольф (молодший брат) займалися виробленням матеріалів, а мати і сестри робили викрійки — фабрика випускала спальні тапочки та конструктивно прості тенісні туфлі. Рудольф поринув у сімейний бізнес у 1923 році
+        </p>
+      </div>
+
+    </div >
   )
-}
+} 

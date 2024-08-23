@@ -44,7 +44,7 @@ function App() {
 
         </div>
       </div >
-      <div className={styles.footer}> your choice 2024</div>
+      <div className={styles.footer}> <p className={styles.footer_text}>your choice 2024</p> </div>
     </div >
   );
 }

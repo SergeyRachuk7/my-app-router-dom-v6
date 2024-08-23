@@ -41,21 +41,21 @@ export const adidasArr: AdidasItem[] = [
 export const Adidas = () => {
   return (
     <div>
-      <h2>ADIDAS</h2>
-      <div style={{ display: "flex", justifyContent: "center" }} >
+      <h2 style={{ textAlign: "center", marginBottom: "20px" }}>ADIDAS</h2>
+      <div style={{ display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px" }} >
         {adidasArr.map((item, index) => (
           <div >
             <Link key={index} to={`/adidas/${item.id}`}>
               <img src={item.picture} alt={item.model} style={{ width: "200px", height: "200px", marginRight: "10px" }} />
             </Link>
-            <h3>{item.model}</h3>
+            <h3 >{item.model}</h3>
             {/* <p>{item.collection}</p> */}
-            <p>{item.price}</p>
+            <p >{item.price}</p>
           </div>
 
         ))}
       </div>
-      <p>Мы начали в туалете и завоевали мир. А между тем мы добились больших успехов и иногда с трудом достигали наших целей. Мы сделали все возможное для лучшего. Мы улучшились и выросли. Смотрим в будущее, всегда помня, откуда мы пришли. Это наша история</p>
+      <p style={{ textAlign: "center" }}>Мы начали в туалете и завоевали мир. А между тем мы добились больших успехов и иногда с трудом достигали наших целей. Мы сделали все возможное для лучшего. Мы улучшились и выросли. Смотрим в будущее, всегда помня, откуда мы пришли. Это наша история</p>
     </div>
   );
 }; 

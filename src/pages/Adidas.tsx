@@ -1,5 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import styled from "styled-components";
+// import styles from './styles.module.css';
+
+
 
 import AdiFOM_TRXN from '../assets/AdiFOM_TRXN_Shoes_Black_IG7453_01_standard.webp';
 import PostMove_Mid from '../assets/PostMove_Mid_Cloudfoam_Super_Lifestyle_Basketball_Mid_Classic_Shoes_Black_GY7163_01_standard.webp';
@@ -40,9 +44,10 @@ export const adidasArr: AdidasItem[] = [
 
 export const Adidas = () => {
   return (
-    <div>
+    <div >
       <h2 style={{ textAlign: "center", marginBottom: "20px" }}>ADIDAS</h2>
-      <div style={{ display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px" }} >
+      <div style={{ display: "flex", justifyContent: "center", textAlign: "center", marginBottom: "10px" }}
+      >
         {adidasArr.map((item, index) => (
           <div >
             <Link key={index} to={`/adidas/${item.id}`}>

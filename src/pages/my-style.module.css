@@ -39,8 +39,9 @@
 }
 
 .footer {
-   background-color: black;  
-   text-align: center; 
+   background-color: black;   
+   text-align: center;  
+   padding-top: 40px;
    font-size: 24px; 
    font-weight: 700; 
    height: 120px; 

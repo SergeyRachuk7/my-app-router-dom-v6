@@ -25,7 +25,7 @@ function App() {
           <S.NavWrapper><NavLink to={PATH.PAGE1} >Adidas</NavLink></S.NavWrapper>
           <S.NavWrapper><NavLink to={PATH.PAGE2} >Puma</NavLink></S.NavWrapper>
           <S.NavWrapper><NavLink to={PATH.PAGE3} >Adidastwo</NavLink></S.NavWrapper>
-          <a href="page3">page HTML</a>
+          {/* <a href="page3">page HTML</a> */}
         </div>
         <div className={styles.content}>
           <Routes>
@@ -44,7 +44,7 @@ function App() {
 
         </div>
       </div >
-      <div className={styles.footer}>adidas 2024</div>
+      <div className={styles.footer}> your choice 2024</div>
     </div >
   );
 }
